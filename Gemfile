@@ -6,14 +6,13 @@ gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 gem 'bootstrap', '~> 4.1.1'
-gem 'rails_12factor'
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -31,6 +30,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+group :production do
+  # gem 'pg'
+
+  gem 'rails_12factor'
+
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
