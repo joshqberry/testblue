@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+
 gem 'bootstrap', '~> 4.1.1'
 #gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 # Use SCSS for stylesheets
@@ -35,7 +35,7 @@ group :production do
   # gem 'pg'
 
   gem 'rails_12factor'
-
+gem 'pg', '~> 0.18'
 end
 
 # Use Capistrano for deployment
